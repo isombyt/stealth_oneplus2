@@ -219,6 +219,7 @@ int proc_sched_autogroup_set_nice(struct task_struct *p, int nice)
 
 	next = HZ / 10 + jiffies;
 	ag = autogroup_task_get(p);
+	shares = scale_load(prio_to_weight[nice + 20]);
 
 	down_write(&ag->lock);
 	err = sched_group_set_shares(ag->tg, prio_to_weight[nice + 20]);
