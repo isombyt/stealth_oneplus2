@@ -388,6 +388,7 @@ static struct ctl_table kern_table[] = {
 		.mode		= 0644,
 		.proc_handler   = sched_hmp_proc_update_handler,
 	},
+#if 0
 	{
 		.procname	= "sched_spill_load",
 		.data		= &sysctl_sched_spill_load_pct,
@@ -395,6 +396,7 @@ static struct ctl_table kern_table[] = {
 		.mode		= 0644,
 		.proc_handler	= sched_hmp_proc_update_handler,
 	},
+#endif
 	{
 		.procname	= "sched_spill_nr_run",
 		.data		= &sysctl_sched_spill_nr_run,
