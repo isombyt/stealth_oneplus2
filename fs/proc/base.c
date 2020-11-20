@@ -1124,6 +1124,7 @@ out:
 		if (!strcmp(task_comm, "id.GoogleCamera") ||
 		    !strcmp(task_comm, "ndroid.settings") ||
 		    !strcmp(task_comm, "com.android.camera") ||
+                    !strcmp(task_comm, "com.oneplus.camera") ||
             !strcmp(task->comm, "eaurora.snapcam")) {
 			struct task_kill_info *kinfo;
 
