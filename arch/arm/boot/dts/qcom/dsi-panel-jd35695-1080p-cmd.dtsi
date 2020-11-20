@@ -56,6 +56,7 @@ dsi_jd35695_1080_cmd: qcom,mdss_dsi_jd35695_1080p_cmd {
 
 			      qcom,ulps-enabled;
 			      qcom,suspend-ulps-enabled;
+                              qcom,panel-allow-phy-poweroff;
 
 			      qcom,mdss-dsi-on-command = [
 				      15 01 00 00 00 00 02 FF 10
